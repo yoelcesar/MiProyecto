@@ -1,0 +1,4 @@
+Observaciones a casos de uso y requerimientos
+----------------------------------------------
+- requerimientos funcionales muy generales
+- Falta detalle en los casos de uso, la descripcion es muy general
