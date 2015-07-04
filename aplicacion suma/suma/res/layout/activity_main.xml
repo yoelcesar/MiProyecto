@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.suma.MainActivity" >
+
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMA DE DOS NUMEROS" />
+     
+     <EditText
+        android:id="@+id/n1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:ems="10" >
+    </EditText>
+    <EditText
+        android:id="@+id/n2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/n1"
+        android:layout_below="@+id/n1"
+        android:layout_marginTop="17dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/n2"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="23dp"
+        android:onClick="sumar"
+        android:text="SUMAR" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/r"
+        android:layout_alignLeft="@+id/n2"
+        android:text="la suma es :" />
+
+    <TextView
+        android:id="@+id/r"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:layout_alignRight="@+id/n2"
+        android:layout_below="@+id/btn"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="44dp"
+        android:text=" " />
+
+    
+
+</RelativeLayout>
