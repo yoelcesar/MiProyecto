@@ -2,3 +2,8 @@ Observaciones a casos de uso y requerimientos
 ----------------------------------------------
 - requerimientos funcionales muy generales
 - Falta detalle en los casos de uso, la descripcion es muy general
+
+OBSERVACIONES A SEGUNDO AVANCE
+-------------------------------------
+- No has hecho merge del pull-request que te he enviado con las observaciones
+- debes hacer mas commits, mas frecuentes, mas regulares.
