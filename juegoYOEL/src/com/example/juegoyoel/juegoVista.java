@@ -11,8 +11,11 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 public class juegoVista extends view implements Runnable{
+	private boolean running = true;
+	private Paint paint;
 	
 	private Bitmap bmpFundo; //declaramos una imagen
+	private boolean iniciarjuego = false;
 	
     public void iniciarjuego(){
 	
@@ -20,17 +23,20 @@ public class juegoVista extends view implements Runnable{
 	     bmpFundo = Bitmap.createScaledBitmap(bmpFundo, getWidth(), getHeight(), true);// cambiamos las medidas de laimagen de fondo 
          iniciarjuego = true;
 	}
+ // metodo que dibuja todas las imagenes y figuras
+ 	public void draw(Canvas canvas) {
+ 		super.draw(canvas);
+ 		if (iniciarjuego==false) {
+ 			iniciarjuego();
+ 		}
+ 		
+ 		Paint paint;
+		//desenha cor de fundo
+ 		//canvas.drawColor(Color.BLUE);// color de fondo
+ 		canvas.drawBitmap(bmpFundo, 0, 0, paint);// cargamos la imagen de fondo
+ 		//define a cor do desenho
+ 		//paint.setColor(Color.RED);
+ 		}
+ 		
     
-private int getHeight() {
-	
-	return 0;
-}
-private int getWidth() {
-	
-	return 0;
-}
-private Resources getResources() {
-	
-		return null;
-}
 }
