@@ -13,9 +13,4 @@ public class MainActivity extends Activity {
 		juegoVista game = new juegoVista();
         setContentView(game);
     }
-
-	private void setContentView(juegoVista game) {
-		
-		
-	}
 }
