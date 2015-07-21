@@ -10,7 +10,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		juegoVista game = new juegoVista();
+		juegoVista game = new juegoVista(this);
         setContentView(game);
     }
+
 }
