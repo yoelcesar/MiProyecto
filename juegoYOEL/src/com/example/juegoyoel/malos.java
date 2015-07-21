@@ -6,15 +6,15 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-// podemos extender todos los metodos de la clase rectangulo
-public class malos extends  {
+// podemos extender todos los metodos de la clase figura
+public class malos extends figura {
 	private static Bitmap bmp;// declaramos la imagen
 //	resourser = ubicacion de la imagen 
 	public malos(int x, int y, Resources res) {
 		super(x, y, 40, 40);
 		if (bmp==null) {
 			//instancio la imagem de resource
-			bmp = BitmapFactory.decodeResource(res, R.drawable.);
+			bmp = BitmapFactory.decodeResource(res, R.drawable.cobo);
 			//redimensiona imagem
 			bmp = Bitmap.createScaledBitmap(bmp, 40, 40, true);
 		}
@@ -31,10 +31,6 @@ public class malos extends  {
 		}
 	}
 	public void draw(Canvas canvas, Paint paint) {
-		//paint.setColor(Color.RED);
-		//canvas.drawRect(getX(),getY(),
-		//		getX()+getWidth(), getY()+getHeight(),
-		//		paint);
 		canvas.drawBitmap(bmp, getX(), getY(), paint);
 	}
 }

@@ -36,4 +36,20 @@ public class figura {
 	public void setWidth(int width) {
 		this.width = width;
 	}
-}	
+    // metodo para colicion de las imagenes	detectamos el area del rectangulo
+	public boolean colide(figura f) {
+		if (f.getX()>x+width) return false;
+		if (f.getY() > y +height) return false;
+		if (f.getX()+f.getWidth()<x) return false;
+		if (f.getY()+f.getHeight()<y) return false;
+		return true;
+	}
+	// metodo para enviar la posicion del rectangulo
+	public boolean colide(int x2, int y2) {
+		if (x2>x+width) return false;
+		if (y2>y+height) return false;
+		if (x2<x) return false;
+		if (y2<y) return false;
+		return true;
+	}
+}

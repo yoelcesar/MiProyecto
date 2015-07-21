@@ -73,9 +73,9 @@ public class juegoVista extends View implements Runnable{
  		}
  		
 		//desenha color de fundo
- 		//canvas.drawColor(Color.BLUE);// color de fondo
+ 		// color de fondo
  		canvas.drawBitmap(bmpFundo, 0, 0, paint);// cargamos la imagen de fondo
- 		//define a cor do desenho
+ 		//definir color  de fondo
  		//paint.setColor(Color.RED);
  		for (int i = 0; i < malos.length; i++) {
 			malos[i].draw(canvas, paint);
