@@ -24,7 +24,7 @@ public class malos extends figura {
 		if (getY()<height) {
 			setY(getY()+5);
 		} else {
-			// pomenos la posicion aleatoria de 0 - el ancho de la pantalla menos 25
+			// pomenos la posicion aleatoria de 0 - 25 el ancho de la pantalla menos 25
 			int x = (int) (Math.random() * (width-25));
 			setX(x);
 			setY(-25);

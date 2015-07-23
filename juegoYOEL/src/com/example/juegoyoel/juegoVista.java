@@ -39,10 +39,10 @@ public class juegoVista extends View implements Runnable{
 		}
 	
 	     bmpFundo = BitmapFactory.decodeResource(getResources(), R.drawable.fondo);//cargar la imagen
-	     bmpFundo = Bitmap.createScaledBitmap(bmpFundo, getWidth(), getHeight(), true);// cambiamos las medidas de laimagen de fondo 
+	     bmpFundo = Bitmap.createScaledBitmap(bmpFundo, getWidth(), getHeight(), true);// cambiamos las medidas de la imagen de fondo 
          iniciarjuego = true;
 	}
-    // medodo existente iniciando juego
+    // medodo existente iniciando el juego
     public void run(){
     	while (running){
     		try{
@@ -72,7 +72,6 @@ public class juegoVista extends View implements Runnable{
  			iniciarjuego();
  		}
  		
-		//desenha color de fundo
  		// color de fondo
  		canvas.drawBitmap(bmpFundo, 0, 0, paint);// cargamos la imagen de fondo
  		//definir color  de fondo
@@ -81,7 +80,7 @@ public class juegoVista extends View implements Runnable{
 			malos[i].draw(canvas, paint);
 		}
  		
- 		//definir el color text
+ 		//definir el color de  texto que aperecera la pantalla
  		paint.setColor(Color.BLUE);
  		paint.setTextSize(30);//tamaño del texto
 		canvas.drawText("puntos:" + puntos , 0, 30, paint);
@@ -93,11 +92,11 @@ public class juegoVista extends View implements Runnable{
  	public boolean onTouchEvent(MotionEvent event){
  		//pega la pantalla
  		int action = event.getAction();
- 		//pega la posision del dedo
+ 		//pega la posición  del dedo
  		int x = (int) event.getX();
  		int y = (int) event.getY();
  		if (action==MotionEvent.ACTION_DOWN ) {
- 			//toca el dedo
+ 			//cuando toca el dedo ejecuta la siguiente funcuin
  			for (int i = 0; i < malos.length; i++) {
 				if (malos[i].colide(x,y)) { /////////........................
 					malos[i].setX(-50);//.......................
@@ -105,7 +104,7 @@ public class juegoVista extends View implements Runnable{
 				}
 			}
 		}else if (action==MotionEvent.ACTION_UP){
-			//soltar pantalla
+			//soltar pantalla con el dedo
 			
 		}else if (action==MotionEvent.ACTION_MOVE){
 			//moviniemto del dedo
@@ -113,7 +112,7 @@ public class juegoVista extends View implements Runnable{
 		return super.onTouchEvent(event);
  		
  	}
- 	//terminar el juego
+ 	//termina el juego
  	public void terminar(){
  		running = false;
  	}

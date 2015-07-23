@@ -36,7 +36,7 @@ public class figura {
 	public void setWidth(int width) {
 		this.width = width;
 	}
-    // metodo para colicion de las imagenes	detectamos el area del rectangulo
+    // metodo para colicion de las imagenes	detectados el area del rectangulo
 	public boolean colide(figura f) {
 		if (f.getX()>x+width) return false;
 		if (f.getY() > y +height) return false;
