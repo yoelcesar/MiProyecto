@@ -7,3 +7,8 @@ OBSERVACIONES A SEGUNDO AVANCE
 -------------------------------------
 - No has hecho merge del pull-request que te he enviado con las observaciones
 - debes hacer mas commits, mas frecuentes, mas regulares.
+
+OBSERVACIONES TERCER AVANCE
+---------------------------------------------------------
+- Es la ultima vez que vuelvo a hacer fork de tu repositorio, si cambia la historia no se volverá a revisar.
+- Esta bien el numero de commits, ¿por que los comentarios están en portuges?
