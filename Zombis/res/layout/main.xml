@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="@drawable/fondo1" >
+<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+    
+<TextView
+    android:id="@+id/textJugar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="45dip"
+    android:paddingTop="15dip"
+    android:text="JUGAR"
+    
+    android:width="260dip" />
+
+</TableRow>
+<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/textSalir"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingLeft="45dip"
+    android:paddingTop="15dip"
+    android:text="SALIR"
+    
+    android:width="260dip" />
+
+</TableRow>
+</LinearLayout>
